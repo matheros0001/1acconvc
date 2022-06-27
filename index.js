@@ -1,20 +1,14 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config.json");
-const { token, prefix } require("./config.json");
 
 client.on("ready", () => {
- client.user.setActivity(`Im ready`)
- client.user.setStatus("dnd")
- console.log("hi");
-});
+  client.channels.cache.get("Voice id").join();
+})
 
-client.on("guildCreate", guild => {
-  const channel = client.guild.channels.cache.get("977887542789668865")
-  const embed = new MessageEmbed()
-  .setTitle("Joined")
-  .setColor("RANDOM")
- channel.send(embed);
+client.on("ready", () => {
+   client.user.setStatus("dnd") // You can change it to online, dnd, idle
+   client.user.setActivity("Activity");
+ console.log(`Successfully logined as ${client.user.tag} `)
 });
 
 client.login(token);
