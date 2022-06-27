@@ -1,13 +1,15 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("./config.json");
+const { token, prefix } require("./config.json");
 
 client.on("ready", () => {
- client.user.setActivity("Im ready")
- client.user.setStatus("idle")
+ client.user.setActivity(`Im ready`)
+ client.user.setStatus("dnd")
  console.log("hi");
 });
 
-client.on("guildCreate", async (guild) => {
+client.on("guildCreate", guild => {
   const channel = client.guild.channels.cache.get("977887542789668865")
   const embed = new MessageEmbed()
   .setTitle("Joined")
@@ -15,4 +17,4 @@ client.on("guildCreate", async (guild) => {
  channel.send(embed);
 });
 
-client.login("OTg5MTE1NjkxNTY1MjExNjg4.GNmDmm.aQAbkZL_dWU-WxbrdHdvR6Rek-zZUeW9irUpek");
+client.login(token);
