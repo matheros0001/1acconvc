@@ -1,6 +1,6 @@
 { 
   "name": "updated-music",
-  "version": "4.0.0",
+  "version": "3.0.0",
   "description": "Thls Project lt was really old and i updated the packages and version and the commands!",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "Dreex#0001",
   "license": "GPL-3.0",
   "dependencies": {
-    "discord.js": "^13.5.3"
+    "discord.js": "^12.5.3"
   }
 }
