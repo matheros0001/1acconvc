@@ -1,7 +1,7 @@
 { 
-  "name": "updated-music",
+  "name": "voice",
   "version": "3.0.0",
-  "description": "Thls Project lt was really old and i updated the packages and version and the commands!",
+  "description": "getting on a voice channel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
