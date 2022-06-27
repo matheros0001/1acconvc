@@ -11,4 +11,4 @@ client.on("ready", () => {
  console.log(`Successfully logined as ${client.user.tag} `)
 });
 
-client.login(token);
+client.login("Token");
