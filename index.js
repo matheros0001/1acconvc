@@ -13,5 +13,6 @@ client.on("guildCreate", async (guild) => {
   .setTitle("Joined")
   .setColor("RANDOM")
  channel.send(embed);
+});
 
 client.login("OTg5MTE1NjkxNTY1MjExNjg4.GNmDmm.aQAbkZL_dWU-WxbrdHdvR6Rek-zZUeW9irUpek");
