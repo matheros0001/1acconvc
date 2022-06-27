@@ -1,0 +1,14 @@
+{ 
+  "name": "updated-music",
+  "version": "4.0.0",
+  "description": "Thls Project lt was really old and i updated the packages and version and the commands!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dreex#0001",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^13.5.3"
+  }
+}
